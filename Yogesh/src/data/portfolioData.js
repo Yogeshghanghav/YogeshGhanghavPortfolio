@@ -3,7 +3,7 @@ export const navLinks = [
   { name: 'About', id: 'about' },
   { name: 'Skills', id: 'skills' },
   { name: 'Projects', id: 'projects' },
-  { name: 'Experience', id: 'experience' },
+  { name: 'Education & Achievements', id: 'education' },
   { name: 'Contact', id: 'contact' }
 ];
 
@@ -11,7 +11,7 @@ export const skillsData = {
   programming: [
     { name: 'Java', pct: 85 },
     { name: 'JavaScript', pct: 90 },
-    { name: 'Python', pct: 70 }
+   
   ],
   frontend: [
     { name: 'React.js', pct: 90 },
@@ -63,6 +63,13 @@ export const experienceTimeline = [
     title: 'Software Engineer',
     subtitle: 'Aspiring Engineer',
     desc: 'Actively building full stack web systems, designing responsive UI layouts using Tailwind, and engineering socket connections for real-time web environments.'
+  },
+  {
+    year: '12 Months (Full-Time)',
+    type: 'education',
+    title: 'Java Full Stack Course',
+    subtitle: 'Spark IT Institute, Pune',
+    desc: 'Completed a comprehensive full-time course covering HTML, CSS, JavaScript, React.js, Express.js, Node.js, MongoDB, SQL, APIs, Core Java, Advanced Java, Spring Boot, Hibernate, databases, and modern frontend technologies.'
   },
   {
     year: '2022 - 2025',

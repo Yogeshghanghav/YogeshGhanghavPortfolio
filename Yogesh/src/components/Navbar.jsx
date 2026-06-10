@@ -21,7 +21,7 @@ export default function Navbar({ activeSection, menuOpen, setMenuOpen }) {
     { name: 'About', id: 'about' },
     { name: 'Skills', id: 'skills' },
     { name: 'Projects', id: 'projects' },
-    { name: 'Experience', id: 'experience' },
+    { name: 'Education & Achievements', id: 'education' },
     { name: 'Contact', id: 'contact' }
   ];
 

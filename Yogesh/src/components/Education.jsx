@@ -6,7 +6,7 @@ import { experienceTimeline } from '../data/portfolioData';
 export default function Education() {
   return (
     <section
-      id="experience"
+      id="education"
       className="relative w-full py-24 px-6 md:px-12 bg-transparent overflow-hidden border-b border-red-600/10"
     >
       <div className="w-full max-w-5xl mx-auto">
@@ -15,7 +15,7 @@ export default function Education() {
         <div className="text-center mb-20">
           <span className="text-[10px] font-bold uppercase tracking-widest text-red-500">JOURNEY</span>
           <h2 className="text-3xl md:text-5xl font-heading font-extrabold text-white mt-1">
-            Education & Experience<span className="text-red-500">.</span>
+            Education & Achievements<span className="text-red-500">.</span>
           </h2>
           <div className="w-12 h-[2px] bg-red-600 mx-auto mt-4" />
         </div>
