@@ -8,6 +8,7 @@ export default function Skills() {
     { key: 'frontend', label: 'Frontend Technologies' },
     { key: 'backend', label: 'Backend & APIs' },
     { key: 'database', label: 'Database Architectures' },
+    { key: 'cloud', label: 'Cloud & AI Integration' },
     { key: 'tools', label: 'Development & Tools' }
   ];
 
