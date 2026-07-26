@@ -22,9 +22,9 @@ export default function About() {
     {
       icon: <Code2 size={20} className="text-red-500" />,
       title: "Engineering Stack",
-      heading: "MERN & Java",
+      heading: "MERN, Java & AWS",
       sub: "High-Performance Systems",
-      desc: "Passionate about clean modular patterns, socket events, REST integration, and WebGL implementations."
+      desc: "Passionate about clean modular patterns, socket events, REST integration, and serverless deployment on AWS Lambda."
     }
   ];
 
@@ -54,8 +54,8 @@ export default function About() {
             
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed font-light mb-6">
               I am a results-driven 2025 Bachelor of Technology (B.Tech) in Computer Science graduate 
-              from Sandip University. As a fresher, I have invested my academic journey building 
-              practical, production-ready applications. I specialize in designing backends using 
+              from Sandip University. I gained hands-on industry experience as a Full Stack Developer 
+              Intern at Spark IT, building production-facing features. I specialize in designing backends using 
               Node.js and Java, and deploying rich, animated user interfaces with React and Tailwind.
             </p>
 
