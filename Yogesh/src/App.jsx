@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, lazy, Suspense } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -8,7 +8,7 @@ import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Preloader from './components/Preloader';
-import PortfolioCanvas from './components/PortfolioCanvas';
+const PortfolioCanvas = lazy(() => import('./components/PortfolioCanvas'));
 import MusicPlayer from './components/MusicPlayer';
 
 export default function App() {
@@ -64,7 +64,9 @@ export default function App() {
       <Preloader onComplete={() => setPreloaderDone(true)} />
       
       
-      <PortfolioCanvas scrollProgress={scrollProgress} />
+      <Suspense fallback={null}>
+        <PortfolioCanvas scrollProgress={scrollProgress} />
+      </Suspense>
 
       
       
@@ -73,6 +75,9 @@ export default function App() {
           preloaderDone ? 'opacity-100' : 'opacity-0 h-screen overflow-hidden'
         }`}
       >
+        <a href="#home" className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[200] focus:px-4 focus:py-2 focus:bg-red-600 focus:text-white focus:rounded-lg">
+          Skip to content
+        </a>
         <Navbar 
           activeSection={activeSection} 
           menuOpen={menuOpen} 
